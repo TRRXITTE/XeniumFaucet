@@ -18,8 +18,8 @@
 module.exports = {
 	// Filenames for the databases
 	databases: {
-		transactions: 'transactions.db',
-		addresses: 'addresses.db'
+		transactions: 'transaction-xte.db',
+		addresses: 'addresses-xte.db'
 	},
 
 	// WalletAPI configuration
@@ -46,10 +46,10 @@ module.exports = {
 
 		// Coin configuration
 		defaultUnlockTime: 35,
-		defaultMixin: 2,
-		decimalPlaces: 3,
-		decimalDivisor: 10 ** 3, // 10 to the power of decimalPlaces
-		defaultFee: 0.5
+		defaultMixin: 4,
+		decimalPlaces: 2,
+		decimalDivisor: 10 ** 2, // 10 to the power of decimalPlaces
+		defaultFee: 100
 	},
 
 	// Google reCaptcha v2 configuration
@@ -68,14 +68,14 @@ module.exports = {
 		port: 8909,
 
 		// The minimum amount of coins to be sent (in atomic units)
-		minimumCoinsToBeSent: 1000,
+		minimumCoinsToBeSent: 1000000,
 
 		// The maximum amount of coins to be sent (in atomic units)
-		maximumCoinsToBeSent: 25000,
+		maximumCoinsToBeSent: 10000000,
 
 		// Address validation
 		walletAddressLength: 98,
-		walletAddressStartsWith: 'XNU',
+		walletAddressStartsWith: 'XT',
 
 		// Coins are claimable every this many milliseconds
 		claimableEvery: 24 * 60 * 60 * 1000 // 24 hours
@@ -84,14 +84,14 @@ module.exports = {
 	// Frontend configuration
 	frontend: {
 		// Coin configuration for the frontend
-		coinName: 'Xenium',
-		ticker: 'XNU',
+		coinName: 'traaitt',
+		ticker: 'XTE',
 
 		// Coin claiming interval as a string
 		claimableEvery: '24 hours',
 
 		// The person this faucet is run by, with Discord Tag
-		faucetOwner: 'TheDevMinerTV',
+		faucetOwner: 'TRRXITTE Int., incorporate',
 		faucetOwnerDiscord: 'TheDevMinerTV#4751'
 	}
 }
