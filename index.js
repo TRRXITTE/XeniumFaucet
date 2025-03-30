@@ -39,13 +39,8 @@ const transactionsDatabase = NeDB.create({
 })
 
 const wallet = new WalletAPI({
-<<<<<<< HEAD
-    ...config.wallet,
-    userAgent: `XTE-faucet ${PackageJSON.version}`
-=======
 	...config.wallet,
 	userAgent: `XeniumFaucet ${PackageJSON.version}`
->>>>>>> parent of 1002148 (add ssl + custom directory)
 })
 
 let walletAddress = ''
