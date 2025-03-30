@@ -85,8 +85,8 @@ async function main() {
 
         // Load SSL certificates
         const sslOptions = {
-            key: fs.readFileSync('/etc/letsencrypt/live/sha256.trrxitte.com/privkey.pem'),
-            cert: fs.readFileSync('/etc/letsencrypt/live/sha256.trrxitte.com/fullchain.pem')
+            key: fs.readFileSync('/home/traaitt/XeniumFaucet/certs/privkey.pem'),
+            cert: fs.readFileSync('/home/traaitt/XeniumFaucet/certs/fullchain.pem')
         }
 
         // Create HTTPS server
